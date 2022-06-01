@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ed2a1bd44.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-semibold">
+    <header>
+
+    </header>
+    <main>
+        <section class="w-9/12 bg-gray-300 mx-auto rounded-lg p-16 mt-24">
+            <div class="">
+                <div class="h-36 flex flex-row justify-around bg-gray-50 mb-4 rounded-lg mx-12">
+                    <div class="flex flex-row items-center ">
+                        <img class="w-28" src="images/product-1.png" alt="">
+                        <h2 class="text-xl">iPhone 11 128GB Black</h2>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <button id="phone-minus" class="m-2.5"><i class="fa-solid fa-arrow-left"></i></button>
+                        <input id="phone-input" class="w-12 h-8 bg-gray-300 rounded fw-semibold m-2.5 text-center" min="0" type="number" value="1">
+                        <button id="phone-plus" class="m-2.5"><i class="fa-solid fa-arrow-right"></i></button>
+                        <h2 class="text-xl mx-4">$<span id="phone-total">1219</span></h2>
+                        <img class="mx-2.5" src="images/remove.png" alt="">
+                    </div>
+                </div>
+                <div class="h-36 flex flex-row justify-around bg-gray-50 rounded-lg mx-12 mb-4">
+                    <div class="flex flex-row items-center ">
+                        <img class="w-28" src="images/product-2.png" alt="">
+                        <h2 class="text-xl">iPhone 11 Silicon Case Black</h2>
+                    </div>
+                    <div class="flex flex-row items-center">
+                        <button id="case-minus" class="m-2.5"><i class="fa-solid fa-arrow-left"></i></button>
+                        <input id="case-input" class="w-12 h-8 bg-gray-300 rounded fw-semibold m-2.5 text-center" min="0" type="number" value="1">
+                        <button id="case-plus" class="m-2.5"><i class="fa-solid fa-arrow-right"></i></button>
+                        <h2 class="text-xl mx-4">$<span id="case-total">59</span></h2>
+                        <img class="mx-2.5" src="images/remove.png" alt="">
+                    </div>
+                </div>
+                <div class="h-36 flex justify-around items-center bg-gray-50 rounded-lg mx-12 mb-4">
+                    <div>
+                        <div><h2  class="text-xl">Sub Total:</h2></div>
+                        <div><h2 class="text-xl">Tax:</h2></div>
+                        <div><h2 class="text-xl">Total:</h2></div>
+                    </div>
+                    <div>
+                        <div><h2 class="text-2xl">$<span id="subtotal-amount">1219</span></h2></div>
+                        <div><h2 class="text-2xl">$<span id="tax-amount">0</span></h2></div>
+                        <div><h2  class="text-2xl">$<span id="total-amount">1219</span></h2></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-around">
+                <div><button class="bg-green-500 px-6 py-2 rounded text-xl text-white">Check Out</button></div>
+            </div>
+        </section>
+    </main>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
